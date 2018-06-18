@@ -26,6 +26,7 @@ class GithubUser extends Component{
 
     render(){
         const {user} = this.state
+
         return(
             <div className="GithubUser">
                 <img src={user.avatar_url} alt="" />
