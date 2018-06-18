@@ -3,6 +3,8 @@ import { Route, Switch, NavLink } from 'react-router-dom'
 
 import './App.css'
 import Github from './Github'
+import Homework from './Homework'
+import Pokedex from './Pokedex'
 
 class App extends Component {
   render() {
@@ -17,10 +19,18 @@ class App extends Component {
           <li>
             <NavLink to="/github">GitHub API</NavLink>
           </li>
+          <li>
+            <NavLink to="/homework">Homework</NavLink>
+          </li>
+          <li>
+            <NavLink to="/pokedex">Pokedex</NavLink>
+          </li>
         </ul>
 
         <Switch> 
           <Route path="/github" component={Github} />
+          <Route path="/homework" component={Homework} />
+          <Route path="/pokedex" component={Homework} />
           <Route render={() => <p>click one of the links above</p>}/>
         </Switch>
       </div>
