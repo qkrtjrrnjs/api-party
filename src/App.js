@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h3>what up</h3>
+          <h3>Welcome to the</h3>
           <h1>API PARTY</h1>
         </div>
 
@@ -30,7 +30,7 @@ class App extends Component {
         <Switch> 
           <Route path="/github" component={Github} />
           <Route path="/homework" component={Homework} />
-          <Route path="/pokedex" component={Homework} />
+          <Route path="/pokedex" component={Pokedex} />
           <Route render={() => <p>click one of the links above</p>}/>
         </Switch>
       </div>
